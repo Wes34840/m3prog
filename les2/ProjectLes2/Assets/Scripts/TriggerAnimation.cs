@@ -16,6 +16,8 @@ public class TriggerAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float dirX = GetComponent <GetAxisRaw("Horizontal")>();
+
         if (Input.GetKeyDown(KeyCode.UpArrow)) 
         {
             m_Animator.SetTrigger("Reaction");
